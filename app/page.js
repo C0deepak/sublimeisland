@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      <div className="flex flex-col gap-4 px-8">
+      <div className="flex flex-col gap-4 px-4 lg:px-8">
         <div className="flex items-center gap-2 py-2 border-b-2"><span className="text-slate-500">Hotels </span><ChevronRight size={18} /> Andaman Castle</div>
       </div>
 
-      <div className="flex p-8 gap-8">
-        <div className="w-[30%]  flex flex-col rounded-md shadow-md overflow-hidden">
+      <div className="flex flex-col lg:flex-row p-4 lg:p-8 gap-4 lg:gap-8">
+        <div className="minw-full lg:min-w-[360px] lg:max-w-[360px] flex flex-col rounded-md shadow-md overflow-hidden">
           <img src="/img/image.webp" alt="" className="w-full" />
           <div className="flex justify-between p-4 border-b-2">
             <div className="flex flex-col">
@@ -54,16 +54,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-[70%] flex flex-col gap-4">
+        <div className="w-full flex flex-col gap-4">
           <div className="flex flex-col gap-4 rounded-md shadow-md p-4">
             <p className="font-semibold uppercase">Feel free to Reach Us</p>
-            <div className="flex justify-between">
+            <div className="flex flex-col gap-2 lg:flex-row justify-between">
               <div className="w-1/2 flex items-center gap-2 text-sm">
-                <div className="bg-emerald-100 text-emerald-600 w-8 h-8 rounded-full flex items-center justify-center"><Phone size={14} /></div>
+                <div className="bg-emerald-100 text-emerald-600 min-w-8 h-8 rounded-full flex items-center justify-center"><Phone size={14} /></div>
                 <p>+91 8096453324</p>
               </div>
               <div className="w-1/2 flex items-center gap-2 text-sm">
-                <div className="bg-emerald-100 text-emerald-600 w-8 h-8 rounded-full flex items-center justify-center"><Mail size={14} /></div>
+                <div className="bg-emerald-100 text-emerald-600 min-w-8 h-8 rounded-full flex items-center justify-center"><Mail size={14} /></div>
                 <p>travelisland@gmail.com</p>
               </div>
             </div>
